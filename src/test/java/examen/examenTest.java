@@ -19,8 +19,8 @@ public class examenTest {
 	}
 
 	@Test
-	public void verificaranhoBisiestoDivisibleEntre4yNoEntre100() {
-		assertEquals(false,a.anhoBisiesto(2000));
+	public void verificaranhoBisiestoCompleto() {
+		assertEquals(true,a.anhoBisiesto(2000));
 		assertEquals(true,a.anhoBisiesto(1924));
 		assertEquals(false,a.anhoBisiesto(1513));
 	}

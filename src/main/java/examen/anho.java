@@ -9,8 +9,11 @@ public class anho{
 	}
 
 	boolean anhoBisiesto (int anho){
-		if ( (verificarDivisibles(anho,4) ) && ( !verificarDivisibles(anho,100) ) )
+		if ( verificarDivisibles(anho,4) ){
+			if (verificarDivisibles (anho,100) && !verificarDivisibles(anho,400))
+				return false;
 			return true;
+		}
 		return false;
 	}
 	
