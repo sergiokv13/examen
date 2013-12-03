@@ -14,7 +14,7 @@ public class principalServlet extends HttpServlet {
 			throws ServletException, IOException {
 				response.setContentType("text/html");
 				PrintWriter out = response.getWriter();
-				String anho = request.getParameter("anho");
+				int anho =Integer.parseInt ( request.getParameter("anho") );
 				out.println(anho);
 	}
 }
